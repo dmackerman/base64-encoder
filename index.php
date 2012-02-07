@@ -26,6 +26,7 @@
   </div>
   <footer>
     <p>Created by Dave Ackerman. <a href="http://www.moduscreate.com">Modus Create</a></p>
+    <p>Inspired by Remy Sharps HTML5 file demo. <a href="https://github.com/dmackerman/base64-encoder">GitHub Repo</a></p>
     <a href="http://www.w3.org/html/logo/">
 <img src="http://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="63" height="64" alt="HTML5 Powered" title="HTML5 Powered">
 </a>    
