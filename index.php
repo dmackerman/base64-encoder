@@ -21,7 +21,7 @@
     <article>
       <div id="holder"></div> 
       <textarea id="base64string"></textarea>
-      <p id="status">File API &amp; FileReader API are not supported by your browser.</p>
+      <p id="status">File API &amp; FileReader API are not supported by your browser. Sorry!</p>
     </article>
   </div>
   <footer>
@@ -42,7 +42,7 @@
           state.className = 'fail';
       } else {
           state.className = 'success';
-          state.innerHTML = 'File API &amp; FileReader Available';
+          state.innerHTML = 'File API &amp; FileReader Available. Drop away!';
       }
       holder.ondragover = function () {
           this.className = 'hover';
