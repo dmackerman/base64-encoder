@@ -144,6 +144,7 @@ footer { text-align: center; }
 #holder.hover { border: 10px dashed #333; }
 #base64string { 
   word-wrap: break-word;
+  margin-bottom: 30px;
   font-family: "Monaco";
   font-size: 12px;
   line-height: 20px;
