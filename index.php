@@ -1,8 +1,4 @@
 <!doctype html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
 
@@ -13,13 +9,10 @@
 
   <meta name="viewport" content="width=device-width">
 
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
-
   <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
   <header>
     <h1>base64 encoder</h1>
     <p>Drag an image into the dropzone to return a base64 encoded string</p>
@@ -27,21 +20,21 @@
   <div role="main">
     <article>
       <div id="holder"></div> 
-      <div id="base64string"></div>
+      <textarea id="base64string"></textarea>
       <p id="status">File API &amp; FileReader API are not supported by your browser.</p>
     </article>
   </div>
   <footer>
-    <p>Created by Dave Ackerman. <a href="http:/www.moduscreate.com">Modus Create</a></p>
+    <p>Created by Dave Ackerman. <a href="http://www.moduscreate.com">Modus Create</a></p>
+    <a href="http://www.w3.org/html/logo/">
+<img src="http://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="63" height="64" alt="HTML5 Powered" title="HTML5 Powered">
+</a>    
   </footer>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
-
-  <script>
+<script>
       var holder = document.getElementById('holder'),
           string = document.getElementById('base64string'),
           state = document.getElementById('status');
@@ -66,13 +59,11 @@
               reader = new FileReader();
           reader.onload = function (event) {
               holder.style.background = 'url(' + event.target.result + ') no-repeat center';
-              $('#base64string').html(event.target.result);
+              $('#base64string').html(event.target.result).fadeIn('fast').focus().select();;
           };
           reader.readAsDataURL(file);
           return false;
       };
-  </script>
-
-
+</script>
 </body>
 </html>

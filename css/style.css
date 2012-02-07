@@ -136,8 +136,11 @@ td { vertical-align: top; }
 
 /* styles */
 body { margin: 40px; font-family: "Helvetica Neue", sans-serif; }
-p { font-size: 15px; }
-#holder { border: 10px dashed #ccc; width: 300px; height: 300px; margin: 20px auto;}
+p { font-size: 15px; margin: 0px; text-align: center; }
+h1 { margin: 0px; text-align: center; }
+article { text-align: center; }
+footer { text-align: center; }
+#holder { border: 10px dashed #ccc; width: 75%; height: 200px; margin: 20px auto;}
 #holder.hover { border: 10px dashed #333; }
 #base64string { 
   word-wrap: break-word;
@@ -147,9 +150,41 @@ p { font-size: 15px; }
   background: #FE57A1;
   color: white;
   padding: 20px; 
+  width: 90%;
+  height: 200px;  
+  display: none;
+}
+#status {
+  padding: 15px;
+  width: 75%;
+  margin: 0px auto;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+background-color: #a1cf32;
+background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(161, 207, 50)), to(rgb(136, 175, 55)));
+background-image: -webkit-linear-gradient(top, rgb(161, 207, 50), rgb(136, 175, 55));
+background-image: -moz-linear-gradient(top, rgb(161, 207, 50), rgb(136, 175, 55));
+background-image: -o-linear-gradient(top, rgb(161, 207, 50), rgb(136, 175, 55));
+background-image: -ms-linear-gradient(top, rgb(161, 207, 50), rgb(136, 175, 55));
+background-image: linear-gradient(top, rgb(161, 207, 50), rgb(136, 175, 55));
+filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#a1cf32', EndColorStr='#88af37');
 }
 
+#status.fail {
+background-color: #dd423f;
+background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(221, 66, 63)), to(rgb(179, 51, 49)));
+background-image: -webkit-linear-gradient(top, rgb(221, 66, 63), rgb(179, 51, 49));
+background-image: -moz-linear-gradient(top, rgb(221, 66, 63), rgb(179, 51, 49));
+background-image: -o-linear-gradient(top, rgb(221, 66, 63), rgb(179, 51, 49));
+background-image: -ms-linear-gradient(top, rgb(221, 66, 63), rgb(179, 51, 49));
+background-image: linear-gradient(top, rgb(221, 66, 63), rgb(179, 51, 49));
+filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#dd423f', EndColorStr='#b33331');
+  
+}
 
+footer { color: #555; text-align: center; }
+footer p { margin-bottom: 20px; }
 
 @media print {
   * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
