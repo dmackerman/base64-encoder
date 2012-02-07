@@ -134,6 +134,21 @@ td { vertical-align: top; }
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
 
+/* styles */
+body { margin: 40px; font-family: "Helvetica Neue", sans-serif; }
+p { font-size: 15px; }
+#holder { border: 10px dashed #ccc; width: 300px; height: 300px; margin: 20px auto;}
+#holder.hover { border: 10px dashed #333; }
+#base64string { 
+  word-wrap: break-word;
+  font-family: "Monaco";
+  font-size: 12px;
+  line-height: 20px;
+  background: #FE57A1;
+  color: white;
+  padding: 20px; 
+}
+
 
 
 @media print {
